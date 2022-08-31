@@ -1,0 +1,178 @@
+body {
+	background: #EFEFBB;
+	background-image: url('https://live.mrf.io/statics/i/ps/cdn.falauniversidades.com.br/wp-content/uploads/2022/08/14031220/pokemon.jpg?width=1200&enable=upscale'); 
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+header{
+	background-color: #555;
+	width:50%;
+	border-radius: 35px;
+	margin: 0 auto;
+	
+}
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+p.intro{
+	text-align: center;
+	font-size: 25px;
+}
+p.destaque{
+	
+	text-align: center;
+	font-size: 25px;
+}
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+    padding: 45px 30px;
+    height: 450px;
+    display: flex;
+    color: #222;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+	box-shadow: 0 0 7px 0.5px #000;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 40%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 7%;
+  left: 25%;
+  box-shadow: 0 0 7px 0.5px #000;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water, .ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle, .price {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+button{
+	padding: 15px;
+	color: #000;
+	background-color: red ;
+	border-radius: 35px;
+	box-shadow: 0 0 7px 0.5px #000;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
